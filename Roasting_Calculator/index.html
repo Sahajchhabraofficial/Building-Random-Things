@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roast Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app-container">
+        
+        <div id="intro-screen" class="screen active glass-panel">
+            <h1>What's your math level?</h1>
+            <div class="level-grid">
+                <button class="level-btn" data-level="1">Class 1</button>
+                <button class="level-btn" data-level="2">Class 5</button>
+                <button class="level-btn" data-level="3">Class 8</button>
+                <button class="level-btn" data-level="4">Class 10</button>
+                <button class="level-btn" data-level="5">JEE Aspirant</button>
+                <button class="level-btn" data-level="6">NASA Engineer 🚀</button>
+            </div>
+        </div>
+
+        <div id="calc-screen" class="screen glass-panel">
+            <div class="calc-header">
+                <span id="level-badge">Level</span>
+                <button id="sound-toggle" class="icon-btn">🔊</button>
+            </div>
+            
+            <div class="display-area">
+                <div id="roast-box"></div>
+                <input type="text" id="calc-display" disabled placeholder="0">
+            </div>
+
+            <div class="keypad">
+                <button class="calc-btn action" data-val="C">C</button>
+                <button class="calc-btn action" data-val="DEL">DEL</button>
+                <button class="calc-btn operator" data-val="%">%</button>
+                <button class="calc-btn operator" data-val="/">/</button>
+                
+                <button class="calc-btn num" data-val="7">7</button>
+                <button class="calc-btn num" data-val="8">8</button>
+                <button class="calc-btn num" data-val="9">9</button>
+                <button class="calc-btn operator" data-val="*">×</button>
+                
+                <button class="calc-btn num" data-val="4">4</button>
+                <button class="calc-btn num" data-val="5">5</button>
+                <button class="calc-btn num" data-val="6">6</button>
+                <button class="calc-btn operator" data-val="-">-</button>
+                
+                <button class="calc-btn num" data-val="1">1</button>
+                <button class="calc-btn num" data-val="2">2</button>
+                <button class="calc-btn num" data-val="3">3</button>
+                <button class="calc-btn operator" data-val="+">+</button>
+                
+                <button class="calc-btn num zero" data-val="0">0</button>
+                <button class="calc-btn num" data-val=".">.</button>
+                <button class="calc-btn equals" data-val="=">=</button>
+            </div>
+        </div>
+
+        <div id="game-screen" class="screen glass-panel">
+            <h2 class="glitch-text" data-text="SYSTEM BREACH">SYSTEM BREACH</h2>
+            <div class="game-header">
+                <span>Dodge The Bugs</span>
+                <span id="game-timer">0s</span>
+            </div>
+            <canvas id="game-canvas" width="300" height="350"></canvas>
+            <div id="game-over-panel" class="hidden">
+                <h3>Game Over</h3>
+                <p id="final-score">Time: 0s</p>
+                <button id="restart-btn" class="level-btn">Play Again</button>
+                <button id="exit-game-btn" class="level-btn action">Exit</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
