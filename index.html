@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,88 +7,114 @@
 <title>Building Random Things</title>
 
 <style>
-body{
+*{
     margin:0;
-    font-family:Arial,sans-serif;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
     background:#0f172a;
     color:white;
     text-align:center;
+    min-height:100vh;
 }
 
 .container{
     max-width:1000px;
     margin:auto;
-    padding:40px 20px;
+    padding:60px 20px;
 }
 
 h1{
     font-size:3rem;
+    margin-bottom:15px;
 }
 
 .subtitle{
     color:#94a3b8;
-    margin-bottom:40px;
+    margin-bottom:50px;
+    font-size:1.1rem;
 }
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
     gap:20px;
 }
 
 .card{
     background:#1e293b;
-    border-radius:15px;
-    padding:20px;
-    transition:.3s;
+    border-radius:16px;
+    padding:25px;
+    transition:0.3s ease;
 }
 
 .card:hover{
     transform:translateY(-5px);
 }
 
+.card h2{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
 .card a{
     display:inline-block;
-    margin-top:10px;
-    padding:10px 15px;
+    padding:10px 18px;
     background:#3b82f6;
     color:white;
     text-decoration:none;
     border-radius:8px;
+    transition:0.3s ease;
+}
+
+.card a:hover{
+    background:#2563eb;
+}
+
+.footer{
+    margin-top:60px;
+    color:#64748b;
+    font-size:0.95rem;
 }
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>⚡ Building Anonymous Things</h1>
+<h1>⚡ Building Random Things</h1>
 
 <p class="subtitle">
-A collection of weird, fun and creative software builds by Tech Dev Sahaj.
+Fun, weird and creative software projects built by Tech Dev Sahaj.
 </p>
 
 <div class="grid">
 
 <div class="card">
-<h2>🧮 Roast Calculator</h2>
-<p>A calculator that judges your math skills 😂</p>
-<a href="./Roast-Calculator/">Open</a>
+    <h2>🧮 Roast Calculator</h2>
+    <p>A calculator that secretly judges your math skills and hides a mysterious easter egg.</p>
+
+```
+<!-- IMPORTANT -->
+<!-- Folder name must match your actual folder -->
+<a href="./Roasting_Calculator/">Open Project</a>
+```
+
 </div>
 
-<div class="card">
-<h2>⏰ Angry Alarm</h2>
-<p>An alarm that refuses to let you sleep.</p>
-<a href="./Angry-Alarm/">Open</a>
 </div>
 
-<div class="card">
-<h2>🐶 Desktop Pet</h2>
-<p>A tiny pet that lives on your screen.</p>
-<a href="./Desktop-Pet/">Open</a>
-</div>
-
+<div class="footer">
+    Built by Tech Dev Sahaj 🚀
 </div>
 
 </div>
